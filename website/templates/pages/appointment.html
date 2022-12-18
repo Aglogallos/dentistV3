@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Kontakt Termin</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Kontakt Termin</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Kontact Termin Details Area Start ***** -->
+  <center>
+    <h1>Überprüfen Sie Ihre Informationen : </h1>
+    <strong>Ihren Namen : </strong>{{your_name}}<br/>
+    <strong>Dein Telefon : </strong>{{your_phone}}<br/>
+    <strong>Deine E-Mail : </strong>{{your_email}}<br/>
+    <strong>Dein Zeitplan : </strong>{{your_schedule}}<br/>
+    <strong>Ihre Nachricht : </strong>{{your_message}}<br/>
+
+    <br/><br/>
+    <strong>Notiz : </strong> Wir werden Sie zu Ihrem bevorzugten Zeitplan telefonisch kontaktieren, um Ihren Termin zu vereinbaren
+  </center>
+  <br/><br/><br/>
+
+
+  <!-- ***** Kontact Termin Details End ***** -->
+
+{% endblock %}

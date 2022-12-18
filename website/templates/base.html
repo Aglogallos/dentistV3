@@ -1,0 +1,205 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Smile in Weil</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{% static 'website/img/core_img/Smile_Website_Icon.png' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="https://www.google.com/maps/dir//smile+in+weil/@47.595675,7.5605949,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4791ba035380eaf3:0x6f2d47e5f9933ca3!2m2!1d7.6258861!2d47.5940648" data-toggle="tooltip" data-placement="bottom" target="_blank" title="Königsberger Str. 2 79576 Weil am Rhein"><i class="fa fa-map-marker"></i> <span>Königsberger Str. 2 79576 Weil am Rhein</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="+49 (0)7621 / 79 22 20"><i class="fa fa-phone"></i> <span>+49 (0) 7621 / 79 22 20</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="info.dento@gmail.com"><i class="fa fa-envelope"></i> <span>info.dento@gmail.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://www.doctolib.de/einzelpraxis/weil-am-rhein/smile-in-weil?utm_campaign=website-button&utm_source=smile-in-weil-website-button&utm_medium=referral&utm_content=option-8&utm_term=smile-in-weil" target = "_blank" data-toggle="tooltip" data-placement="bottom" title="Doctorlib"><i class="fa fa-user-md"></i></a>
+              <a href="https://www.facebook.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.google.com/maps/place/Smile+in+Weil+-+Zahnarztpraxis+MSc.+Dimitra+Karvouni/@47.5940648,7.6258861,15z/data=!3m1!5s0x4791ba03574ca2c7:0xf62b2ce415037a21!4m7!3m6!1s0x0:0x6f2d47e5f9933ca3!8m2!3d47.5940648!4d7.6258861!9m1!1b1" target = "_blank" data-toggle="tooltip" data-placement="bottom" title="Google Reviews"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.jameda.de/weil-am-rhein/zahnaerzte/aesthetische-zahnmedizin/m-sc-dimitra-karvouni/uebersicht/81638247_1/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Doctor Reviews"><i class="fa fa-list-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core_img/Smile_Logo_svg.svg' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="{% url 'about' %}">Über Uns</a></li>
+                  <li><a href="{% url 'service' %}">Leistungen</a></li>
+                  <li><a href="#">Info</a>
+                    <ul class="dropdown">
+                      <li><a href="{% url 'faq' %}">- FAQs</a></li>
+                      <li><a href="{% url 'jobs' %}">- Jobs</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'contact' %}">Kontakt</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button -->
+            <a href="" target="_blank" class="btn dento-btn booking-btn">Termin buchen</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  {% block content%}<!--Page Content Will Show Here-->{% endblock %}
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/3.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core_img/Smile_Logo_svg_white.png' %}" alt=""></a>
+            <div class="row"> 
+              <div class="footer-social-info">
+                <a href="https://www.doctolib.de/einzelpraxis/weil-am-rhein/smile-in-weil?utm_campaign=website-button&utm_source=smile-in-weil-website-button&utm_medium=referral&utm_content=option-8&utm_term=smile-in-weil" target = "_blank" tooltip" data-placement="bottom" title="Doctorlib"><i class="fa fa-user-md"></i></a>
+                <a href="https://www.facebook.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.google.com/maps/place/Smile+in+Weil+-+Zahnarztpraxis+MSc.+Dimitra+Karvouni/@47.5940648,7.6258861,15z/data=!3m1!5s0x4791ba03574ca2c7:0xf62b2ce415037a21!4m7!3m6!1s0x0:0x6f2d47e5f9933ca3!8m2!3d47.5940648!4d7.6258861!9m1!1b1" target = "_blank" data-toggle="tooltip" data-placement="bottom" title="Google Reviews"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.jameda.de/weil-am-rhein/zahnaerzte/aesthetische-zahnmedizin/m-sc-dimitra-karvouni/uebersicht/81638247_1/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Doctor Reviews"><i class="fa fa-list-alt"></i></a>
+              </div>
+            </div>
+            <p></p>
+            <p>Making the world a better place, one smile at a time</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> Königsberger Str. 279576 Weil am Rhein</p>
+              <p><i class="icon_phone"></i> +49 / 7621 / 79 22 20</p>
+              <p><i class="icon_mail"></i> info@smile-in-weil.de</p>
+            </div>  
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Öffnungszeiten</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mo-Di</span> <span>8:00 - 12:30, 13:30 - 18:00</span></li>
+              <li><span>Mi</span> <span>14:00 - 19:00</span></li>
+              <li><span>Thu</span> <span>8:00 - 12:30, 13:30 - 17:00</span></li>
+              <li><span>Fri</span> <span>8:00 - 12:00</span></li>
+              <li><span>Sa</span> <span>Geschlossen</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Link</h5>
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'faq' %}">FAQs</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Advisors</a></li>
+                <li><a href="{% url 'jobs' %}">Careers</a></li>
+                <li><a href="#">Dentist</a></li>
+                <li><a href="{% url 'service' %}">Services</a></li>
+                <li><a href="#">Legals</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://instagram/aglogallos.com" target="_blank">Status</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

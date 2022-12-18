@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Jobs</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Jobs</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h2 class="post-title">Smile in Weil Job opportunities</h2>
+            
+            <img src="{% static 'website/img/bg_img/jobs.jpg' %}" alt="">
+
+            <h3>Dental Assistant</h3>
+            
+            
+
+            <h5>Job Brief</h5>
+            <p>We are looking for a competent dental assistant who will make the dentist’s office more efficient and pleasant for patients. You’ll ensure excellent customer service and lift administrative and basic dental tasks off the dentist’s shoulders.</p>
+            <p>Dental assistants should be well-organized with great attention to detail. You should be able to follow instructions and respect dental office regulations. We want you to be skilled in providing direct or indirect patient care and able to make office procedures as smooth as possible.</p>
+            <br/>
+            
+            <blockquote cite="" class="dento-blockquote d-flex">
+              <div class="icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="text">
+                <h5>Good dental care doesn't make you a good student, but if your tooth hurts, it's hard to be a good student</h5>
+                <h6>Geoffrey Canada / <span>Social Activist</span></h6>
+              </div>
+            </blockquote>
+
+            <h5>Dental Assistant Responsibilities : </h5>
+            <p>&#8226;Welcoming customers in the dental office</p>
+            <p>&bull;Preparing customers for treatments or checkups ensuring their comfort</p>
+            <p>&#8226;Selecting and setting up instruments, equipment and material needed</p>
+
+            <p>&#8226;Sterilize instruments according to regulations</p>
+            <p>&bull;Assist the dentist through 4-handed dentistry</p>
+            <p>&#8226;Undertake lab tasks as instructed</p>
+
+            <p>&#8226;Provide oral hygiene and post-operative care instructions</p>
+            <p>&bull;Keep the dental room clean and well-stocked</p>
+            <p>&#8226;Schedule appointments</p>
+            <p>&#8226;Maintain accurate patient records and assist with payment procedures</p>
+          
+              <img src="{% static 'website/img/bg_img/25.jpg' %}" alt="">
+
+              <h5>Requirements and Skills : </h5>
+              <p>&#8226;Proven experience as dental assistant</p>
+              <p>&bull;Knowledge of dental instruments and sterilization methods</p>
+              <p>&#8226;Understanding of health & safety regulations</p>
+  
+              <p>&#8226;Ability to perform regulated non-surgical tasks like coronal polishing is a plus</p>
+              <p>&bull;Good computer skills</p>
+              <p>&#8226;Excellent communication and people skills</p>
+  
+              <p>&#8226;Attention to detail</p>
+              <p>&bull;Well-organized and reliable</p>
+              <p>&#8226;High school diploma; graduating from dental assistant school is preferred</p>
+              <p>&#8226;Additional certification or training is an asset (e.g. EFDA)</p>
+
+              <h5>Application</h5>
+              <p>Sumbit your resume via email at info@smile-in-weil.de <br/>
+              We will conctact you shortly for your follow up interview.</p>
+          </div>
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area news-widget">
+              <h5 class="widget-title">Intresting Facts</h5>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg_img/21.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">                  
+                  <a class="post-title">Working in a dentistry ...</a>
+                </div>
+              </div>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg_img/22.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">
+                  <a class="post-title">Six reasons your breath might smell like poop</a>
+                </div>
+              </div>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg_img/23.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">
+                  <a class="post-title">Everything you need to know about sinus infection</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a href="#"><img class="w-100" src="{% static 'website/img/bg_img/adds.png' %}" alt=""></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}
